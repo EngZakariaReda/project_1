@@ -1,0 +1,772 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.base{
+    background-image: url(../photos/istockphoto-1026458486-2048x2048.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.base1{
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.8 );
+    width: 100vw;
+    height: 100vh;
+}
+.base2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.base-h{
+    color: red;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.base-p{
+    color: antiquewhite;
+    margin-bottom: 15px;
+}
+.btt{
+    width: 125px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.base-btt1{
+    margin-right: 15px;
+}
+.base-btt2{
+    background-color: rgb(27, 133, 133);
+    color: black;
+}
+.header{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(129, 5, 5);
+    z-index: 2;
+    position: fixed;
+   
+}
+.header-img{
+    height: 55px;
+    width: 150px;
+    margin-left: 150px;
+    margin-top: 10px;
+    border-radius: 10px;
+    float: left;
+}
+.header li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+    
+}
+.header ul{
+    float: right;
+    margin-right: 50px;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.header a:hover{
+    text-decoration: underline;
+}
+
+/* ************************************************************************************************ */
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    background-color: #adb0b1;
+    padding-top: 80px;
+}
+.home-h{
+    text-align: center;
+    font-size: 35px;
+    text-transform: capitalize;  
+}
+.home-h1{
+    margin: 15px 0px;
+}
+.home4{
+    width: 100px;
+    height: 4px ;
+    background-color: rgb(5, 114, 209);
+    margin: auto;
+    margin-top: 5px;
+}
+.home5{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    margin-top:100px ;
+}
+.home1,.home2,.home3{
+    width: 29%;
+    height: 230px;
+    border: 3px dashed black;
+    text-align: center;
+    float: left;
+    padding-top: 25px;
+    position: relative;
+}
+.hom::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: black;
+    opacity: 0;
+}
+.hom:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+.hom:hover h2{
+    color: #9f08fd;
+}
+.home2{
+margin: 0px 6%;
+}
+.home-i{
+    font-size: 35px;
+}
+.home-pp{
+    margin-bottom: 20px;   
+}
+.home-aa{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* ****************************************************************************************** */
+
+.third{
+    width: 100vw;
+    height: 150vh;
+    background-color: #f0ead6;
+    padding-top: 70px;
+}
+.third-parent{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.third-parent h2{
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: capitalize;
+}
+.third-parent hr{
+    width: 75px;
+    height: 5px;
+    background-color: #160fdc;
+    margin: auto;
+    margin-top: 10px;
+}
+.parent-div{
+    overflow: auto;
+    margin-top: 50px;
+}
+.parent-div-div1{
+    width: 26%;
+    height: 350px;
+    background-color:  #f0ead6;
+    padding: 10px 0px;
+    float: left;
+    position: relative;
+}
+.center{
+    margin: 0px 10%;
+}
+.parent-div-img img{
+    width: 90%;
+    height: 100%;
+}
+.parent-div-tool{
+    text-align: center;
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(144, 235, 8);
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+.parent-div-tool i{
+   background-color: rgba(0, 0, 0, 0.5);
+   width: 40px;
+   height: 40px;
+   line-height: 40px;
+   font-size: 25px;
+   color: rgb(144, 235, 8);
+}
+.parent-div-tool a{
+    margin-right: 10px;
+}
+.parent-div-div1::after {
+    position: absolute;
+    content: " ";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0;
+}
+.parent-div-div1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.parent-div-div1:hover .parent-div-tool{
+    opacity: 1;
+    visibility: visible;
+}
+.sec{
+    padding-bottom: 100px;
+}
+.parent-div-span{
+    margin-bottom: 15px;
+}
+/* ************************************************************************************************** */
+
+.fourth{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fffff0;
+    padding-top: 70px;
+    
+}
+.fourth-h{
+    font-size: 45px;
+    text-align: center;
+}
+.fourth-hr{
+    width: 80px;
+    height: 4px ;
+    background-color: rgb(5, 114, 209);
+    margin: auto;
+    margin-top: 5px;
+}
+.fourth1,.fourth2,.fourth3,.fourth-21,.fourth-22,.fourth-23{
+    padding-top: 25px;
+    padding-left: 10px;
+    width: 350px;
+    height: 150px;
+    border: 3px dotted black;
+    float: left;
+    position: relative;
+}
+.fourth-2{
+    margin-top: 350px;
+}
+.fourth1{
+   margin-left: 200px;
+   margin-top: 100px; 
+}
+.fourth2{
+    margin: 0px 50px;
+    margin-top: 100px;
+}
+.fourth3{
+    margin-top: 100px;
+}
+.fourth-21{
+    margin-left: 200px;
+}
+.fourth-22{
+    margin: 0px 50px;
+}
+.fourth-i{
+    font-size: 35px;
+    padding-left: 15px;
+}
+.fourth-hh{
+    display: inline;
+    margin-left: 25px;
+    font-size: 30px;
+}
+.fourth p{
+    margin-top: 25px;
+    padding-left: 75px;
+    padding-right: 35px;
+}
+.four:hover .fourth-hh{
+    color: goldenrod;
+}
+.four::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: black;
+    opacity: 0;
+}
+.four:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+
+/* **************************************************************************************************** */
+
+.five{
+    width: 100vw;
+    height: 100vh;
+    background-color: #be9e9e;
+    padding-top: 150px;
+    border: none;
+}
+.five-hr{
+    width: 70px;
+    height: 4px ;
+    background-color: #f0ead6;
+}
+.five1{
+    width: 450px;
+    height: 400px;
+    float: left;
+    margin-left: 200px ;
+    margin-right: 200px ;
+    border: none;
+    
+}
+.five1 h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.five1 div{
+    margin-bottom: 40px;
+}
+.five1 p{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.five1 span{
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.five2{
+    width: 400px;
+    height: 400px;
+    float: left;
+    background-color: white;
+    text-align: center;
+    border: none;
+}
+.five2-photo {
+    padding: 0px 45px;
+    padding-bottom: 3px;
+}
+.five2-photo img{
+    width: 100%;
+    height: 90%;
+    margin: auto;
+}
+.five2-in{
+    background-color: #be9e9e;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    margin: auto;
+    overflow: auto;
+}
+.circle1{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0c04e3;
+    margin: auto;
+    float: left;
+    margin-left: 40%;
+    margin-right: 10px;
+}
+.circle2{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;  
+    margin: auto;
+    float: left; 
+    margin-right: 10px;   
+}
+.circle2:hover{
+    background-color: red;
+}
+/***********************************************************************************************  */
+
+.parent{
+    width: 100vw;
+    height: 40vh;
+    background-image: url(../photos/learn-programming-career-jpg.webp);
+    background-size: cover;
+    position: relative;
+}
+.overlay{
+    width: 100vw;
+    height: 40vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+}
+.ico1,.ico2,.ico3,.ico4{
+    color: white;
+    width: 200px;
+    height: 75%;
+    float: left;
+    margin-top: 100px;
+    margin-left: 150px;
+    text-align: center;
+}
+.overlay i{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #f0ead6;
+}
+
+/* ******************************************************************************************************** */
+
+.task{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(248, 239, 227);
+    padding-top: 40px;
+}
+.hh{
+    text-align: center;
+    font-size: 45px;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.task hr{
+    background-color: aquamarine;
+    width: 70px;
+    height: 5px;
+    margin: auto;
+    margin-top: 12px;
+}
+.tas{
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+    margin-top: 75px;
+}
+.task1,.task2,.task3{
+    width: 28%;
+    height: 400px;
+    border: 3px solid black;
+    text-align: center;
+    float: left;
+    padding-top: 50px;
+    position: relative;
+}
+.task2{
+    margin: 0px 7%;
+}
+.task1-div{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: auto;
+}
+.task1-hh{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tass:hover .task1-hh{
+    color: #db7474;
+} 
+.tass:hover .task1-div{
+    color: rgb(201, 6, 6);
+}
+.task p{
+    margin-top: 20px;
+}
+.task span{
+    font-size: 65px;
+}
+.task label{
+    text-transform: uppercase;
+}
+.task button{
+    width: 150px;
+    height: 40px;
+    margin-top: 25px;
+    border-radius: 25px;
+    background-color: #eff3f5;
+}
+.tass::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    opacity: 0;
+}
+.tass:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    transition: 1s;
+}
+/* *********************************************************************************************** */
+
+.later{
+    width: 100vw;
+    height: 45vh;
+    background-image: url(../photos/painting-mountain-lake-with-mountain-background_188544-9126.avif);
+    background-size: cover;
+    position: relative;
+}
+.over{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+}
+.later1,.later1{
+    width: 350px;
+    height: 60%;
+    float: left;
+    margin-left: 250px;
+    margin-top: 50px;
+}
+.later p{
+    color: white;
+    padding-top: 25px;
+    font-size: 15px;
+    padding-left: 35px;
+}
+.later span{
+    color: antiquewhite;
+    padding-left: 20px;
+    margin-top: 20px;
+    position: absolute;
+    font-size: 20px;
+}
+.later .ss{
+    margin-top: 50px;
+    position: absolute;
+}
+.later img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+/* ******************************************************************************************************************** */
+.late{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 75px;
+}
+.late .hh1{
+    font-size: 35px;    
+}
+.late hr{
+    background-color: rgb(49, 6, 219);
+    width: 50px;
+    height: 3px;
+    margin: auto;
+    margin-top: 12px;
+}
+.late-div{
+    overflow: auto;
+    margin-top: 50px;
+}
+.late-div1{
+    width: 30%;
+    height: 300px;
+    float: left;
+    background-color: #ebe1e1;
+    text-align: center;
+    padding: 11px 15px;
+    position: relative;
+}
+.middle{
+    margin: 0px 5%;
+}
+.late-img{
+    position: relative;
+}
+.late-img img{
+    margin: auto;
+    width: 100%;
+    height: 200px;
+}
+.late-icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.6) ;
+    opacity: 0;
+    visibility: hidden;
+}
+.late-div1:hover .late-icons{
+    opacity: 1;
+    visibility: visible;
+}
+.late-icons a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(18, 167, 231, 0.877);
+    color: white;
+    margin-left: auto;
+}
+.late-icons i{
+    line-height: 40px;
+    font-size: 18px;
+}
+.late-title h2{
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+.late-title p{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.late-div1:hover h2{
+    color: rgb(69, 12, 228);
+}
+.late-div1:hover p{
+    color: red;
+}
+.late-div1::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    opacity: 0;
+}
+.late-div1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: 1s;
+}
+
+
+
+.contain{
+    width: 80%;
+    margin: auto;
+}
+.contain .hh1{
+    font-size: 35px; 
+    text-align: center;
+    margin-top: 75px;
+}
+.contain hr{
+    margin-bottom: 75px;
+    background-color: rgb(49, 6, 219);
+    width: 50px;
+    height: 5px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+.contain1{
+    overflow: auto;
+    background-color:rgb(227, 226, 226) ;
+}
+.contain-div{
+    width: 30%;
+    height: 500px;
+    float: left;
+    background-color: white;
+    padding-left: 25px;
+    text-transform: capitalize;
+    position: relative; 
+}
+.contain-icons{
+    margin: 20px 0px;
+}
+.contain-icons span{
+    padding-right: 18px;
+}
+.contain-div-img img{
+    width: 70%;
+    height: 250px;
+}
+.contain-div-title a{
+    display: block;
+    font-size: 25px;
+    color: blue;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.contain-div-title h2{
+    margin-bottom: 15px;
+}
+.contain-div-title span{
+   font-size: 20px;
+   line-height: 25px;
+}
+.contain-div::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:black ;
+    opacity: 0;
+}
+.contain-div:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+/* ********************************************************************************************************************* */
+.last{
+    width: 100%;
+    height: 45vh;
+    background-color:#cedcec;
+    margin: auto;
+    text-align: center;
+    padding-top: 65px;
+}
+.ii{
+    display:block;
+    margin: 20px 0px;
+}
+.ii i{
+    font-size: 35px;
+    color: #f4650c;
+    padding-left: 10px;
+}
+/* **************************************************************************************************************************** */
